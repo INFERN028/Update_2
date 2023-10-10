@@ -1,0 +1,566 @@
+@media screen and (min-width: 1312px) {
+  .p-user_rates-index .l-content > .mylist {
+    position: fixed;
+    top: 240px;
+  }
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v128/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.p-user_rates-index .l-content > .mylist {
+  position: absolute;
+  top: 64px;
+  right: auto;
+  width: 56px;
+  margin: 0 0 0 -72px;
+  background: rgba(var(--menu-back), 0.7);
+  border-radius: 4px;
+  text-align: left
+}
+
+.p-user_rates-index .l-content > .mylist a {
+  position: relative;
+  display: block;
+  padding: 8px;
+  margin: 2px 0;
+  border-radius: 4px;
+  color: #5e6988;
+  font-size: 0;
+  font-weight: normal;
+  line-height: 0
+}
+
+.p-user_rates-index .l-content > .mylist a:hover {
+  text-decoration: none
+}
+
+.p-user_rates-index .l-content > .mylist a::before {
+  padding: 8px;
+  border-radius: 50%
+}
+
+.p-user_rates-index .l-content > .mylist a:hover::before, .p-user_rates-index .l-content > .mylist a.selected::before {
+  background-color: rgba(var(--popup-color), 1);
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='planned']::before {
+  content: 'today'
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='watching']::before {
+  content: 'play_arrow'
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='rewatching']::before {
+  content: 'replay'
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='completed']::before {
+  content: 'done'
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='on_hold']::before {
+  content: 'schedule'
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='dropped']::before {
+  content: 'delete'
+}
+
+.p-user_rates-index .l-content > .mylist a::after {
+  top: 0;
+  height: 20px;
+  margin: auto 12px
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='planned']::after {
+  content: 'Запланировано'!important
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='watching']::after {
+  content: 'Смотрю'!important
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='rewatching']::after {
+  content: 'Пересматриваю'!important
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='completed']::after {
+  content: 'Просмотрено' !important
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='on_hold']::after {
+  content: 'Отложено'!important
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='dropped']::after {
+  content: 'Брошено'!important
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='watching'][href*="/manga/"]::after {
+  content: 'Читаю'!important
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='rewatching'][href*="/manga/"]::after {
+  content: 'Перечитываю'!important
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='completed'][href*="/manga/"]::after {
+  content: 'Прочитано' !important
+}
+
+.p-user_rates-index .l-content > .mylist a span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 4px;
+  margin: 6px 4px;
+  background: #5e6988;
+  border-radius: 2px;
+  color: white;
+  font-size: 14px;
+  line-height: .8
+}
+
+.p-user_rates-index .l-content > .mylist a span::before, .p-user_rates-index .l-content > .mylist a span::after {
+  display: none
+}
+
+
+.p-user_rates-index .l-content > .mylist a::before {
+  display: block;
+  flex-shrink: 0;
+  width: 1em !important;
+  font-family: 'Material Icons' !important;
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  letter-spacing: normal;
+  text-transform: none;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  overflow: hidden;
+  color: rgba(var(--light-color), 0.8);
+}
+
+.p-user_rates-index .l-content > .mylist a:hover::after {
+  opacity: .9
+}
+
+.p-user_rates-index .l-content > .mylist a:hover::after {
+  transform: translateX(40px)
+}
+
+body#user_rates_index .b-options-floated.mobile-desktop a {
+  margin-left: 0.4em
+}
+
+.p-user_rates-index .l-content > .mylist a::after {
+  display: block !important;
+  position: absolute;
+  padding: .375rem .75rem;
+  margin: .25rem .75rem;
+  background-color: rgba(var(--popup-color), 0.9);
+  border-radius: .125rem;
+  color: rgb(var(--white-color));
+  font-size: .875rem;
+  line-height: 1.25rem;
+  white-space: nowrap;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  transition: .3s
+}
+
+.p-user_rates-index .l-content > .mylist {
+  margin: 0 0 0 -71px;
+  height: auto;
+}
+
+@media screen and (max-width: 1311px) {
+  .p-user_rates-index .l-content > .mylist {
+    width: max-content;
+    position: initial;
+    margin: 0 auto 8px auto;
+  }
+  .p-user_rates-index .l-content > .mylist a:hover::before, .p-user_rates-index .l-content > .mylist a.selected::before {
+    color: rgba(var(--light-color), 1);
+  }
+}
+@media screen and (max-width: 359px) {
+  .p-user_rates-index .l-content > .mylist {
+    width: calc(56px * 3);
+  }
+  .p-user_rates-index .b-options-floated.mobile-desktop a {
+    width: auto;
+  }
+}
+
+
+/*Дорамы*/
+.ani {
+  position: relative;
+  display: inline-block;
+  margin: 0 0.4% 0.4% 0.4%;
+  overflow: hidden;
+  padding: 0.7rem;
+  max-width: 554px;
+  border-radius: 0 0 0.25rem 0.25rem;
+  box-shadow: 0 2px 6px 2px #00000080;
+  border: 0.25rem solid;
+  border-color: #460a32 #450d33 #400e30;
+  background:
+linear-gradient(#320a32, transparent),
+linear-gradient(90deg, #0e0412, transparent),
+linear-gradient(-90deg, #320a32, transparent); /* Цвет фона */
+}
+.ani:hover {
+  background: #320a32;
+  box-shadow: 0 -200px 100px -120px #240924 inset;
+  animation: background 5s infinite alternate;
+  border-color: #640a32;
+}
+@keyframes background {
+  50% {
+    background: #1c081c;
+    box-shadow: 0 -200px 100px -100px #1a091a inset;
+  }
+}
+   /*ТА САМАЯ ПАЛКА*/
+.ani_sid {
+  display: block;
+  float: left;
+  height: 100%;
+  padding: 0.75rem 1.75rem 0.75rem 0.1rem;
+  margin-right: 0.1rem;
+  line-height: 3;
+  padding-bottom: 1.5625rem;
+}
+.ani .b-image,
+.ani img.b-poster {
+  vertical-align: text-top;
+  border-radius: 0.25rem;
+  border: 0.2rem solid !important;
+  border-color: #460a32 #450d33 #400e30 !important;
+  box-shadow: 0 2px 6px 2px #0000004d !important;
+}
+.ani .b-image img,
+.ani img.b-poster {
+  object-fit: cover;
+  height: 270px !important;
+  min-width: 200px !important;
+  max-width: 200px !important;
+  transition: 0.35s all;
+}
+.ani:nth-child(1) .b-image img,
+.ani:nth-child(1) img.b-poster {
+  object-position: center center;
+}
+.ani:nth-child(2) .b-image img,
+.ani:nth-child(2) img.b-poster {
+  object-position: center center;
+}
+.ani .b-image .normalized_width,
+.ani img.normalized_width {
+  max-width: 100% !important;
+}
+.ani .b-image .normalized_height,
+.ani img.normalized_height {
+  max-height: 270px !important;
+}
+.ani .b-image img:hover,
+.ani img.b-poster:hover {
+  transform: scale(1.08);
+  filter: blur(3px);
+}
+.finom-1 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #E6E6FA;
+}
+.finom-2 {
+  display: grid;
+  text-align: initial;
+  position: relative;
+  left: 1rem;
+  color: #DDA0DD;
+  font-size: 0.9rem;
+}
+.finom-3 {
+  position: relative;
+  color: #DDA0DD;
+  font-size: 14px;
+  top: 1.45rem;
+  display: grid;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-shadow: 0 1px 2px #000000;
+}
+.finom-4 {
+  position: relative;
+  font-size: 13px;
+  display: grid;
+  text-align: center;
+  padding: 0.3125rem 0.3125rem 0.3125rem 0.75rem;
+  border-radius: 0.25rem;
+  top: 0.5rem;
+  height: 195px;
+  max-height: 195px;
+  overflow-x: hidden;
+  background: linear-gradient(to right, #460a32, #450d33, #400e30);
+  text-shadow: 0 1px 2px #00000080;
+  color: #E6E6FA;
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+}
+.finom-5 {
+  position: relative;
+  left: 1rem;
+  top: 0.2rem;
+  margin: 2.5rem 0 0 1rem;
+  color: #DDA0DD;
+  text-align: initial;
+  font-size: 0.9rem;
+  text-shadow: 0 1px 2px #000000;
+}
+.finom-6 {
+  position: relative;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  text-align: center;
+  justify-content: center;
+  max-height: 9.375rem;
+  overflow-x: hidden;
+  display: grid;
+  padding: 0.3125rem 1.3125rem 0.3125rem 0.75rem;
+  border-radius: 4px;
+  background: linear-gradient(to right, #460a32, #450d33, #400e30);
+  text-shadow: 0 1px 2px #00000080;
+  box-shadow: 0 2px 6px 2px #0000004d;
+  color: #E6E6FA;
+  float: left;
+  width: calc(100% - 18%);
+  height: 52px;
+  align-items: center;
+}
+.finom-7 {
+  position: relative;
+  left: 0.8rem;
+  font-size: 0.7rem;
+  display: flex;
+  width: 13.6%;
+  padding: 0.3125rem 0rem 0.3125rem 0.75rem;
+  border-radius: 4px;
+  border: 0.2rem solid;
+  background: linear-gradient(to right, #460a32, #450d33, #400e30);
+  border-color: #460a32 #450d33 #400e30;
+  box-shadow: 0 2px 6px 2px #00000026;
+  color: #E6E6FA;
+  float: right;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.finom-8 {
+  position: relative;
+  overflow: hidden;
+  float: right;
+  background: #320a32;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  bottom: 0.5rem;
+  display: flex;
+  line-height: normal;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem solid;
+  border-color: #460a32 #450d33 #400e30;
+  box-shadow: 0 2px 4px 1px #00000033;
+  text-shadow: 0 1px 2px #00000080;
+  margin-top: 1.5rem;
+  margin-right: -2rem;
+}
+.finom-8:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 200px;
+  margin-left: 50px;
+  background: #fff;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0.5) 100%
+  );
+  left: -40px;
+  top: -100px;
+  z-index: 1;
+  transform: rotate(45deg);
+  position: absolute;
+  animation: movingFlare 5s ease-in-out 0.05s infinite;
+}
+@keyframes movingFlare {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+.ani_sid .b-image .marker {
+  right: auto;
+  left: 0.3125rem;
+}
+.ani_sid .b-image::after {
+  position: absolute;
+  display: block;
+  content: "dorama.land";
+  top: 0rem;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  background: #460a32;
+  color: #E6E6FA;
+  padding: 0.74rem;
+  box-shadow: 0 2px 4px 1px #0000004d;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  -webkit-transition: opacity 0.35s ease;
+}
+.ani_sid .b-image:hover::after {
+  opacity: 1;
+}
+@media screen and (max-width: 767px) {
+  .ani_sid {
+    display: flex;
+    float: none;
+    border-bottom: 3px solid #460a32;
+    border-right: none;
+    padding: 0.8rem 1rem 1.5rem 1rem;
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 0.9375rem;
+  }
+  .finom-5 {
+    margin-left: 0.3125rem;
+  }
+  .finom-4 {
+    max-height: 12.5rem;
+  }
+  .finom-7,
+  .finom-8 {
+    display: none;
+  }
+  .finom-6 {
+    width: 100%;
+  }
+}
+/*Дорамы-любимые*/
+.ani_sid-l {
+  display: block;
+  float: left;
+  height: 100%;
+  padding: 0.75rem 1.75rem 0.75rem 0.1rem;
+  margin-right: 0.1rem;
+  line-height: 3;
+  padding-bottom: 1.5625rem;
+}
+.ani_sid-l .b-image::before {
+  position: absolute;
+  display: block;
+  content: "⭐";
+  right: 0;
+  padding-bottom: 1.6875rem;
+  bottom: 0;
+  z-index: 1;
+  font-size: 30px;
+  width: 65px;
+  height: 55px;
+  line-height: 4;
+  text-align: right;
+  padding-right: 0.3125rem;
+  font-weight: bold;
+  pointer-events: none;
+  animation: animate_grow 2s infinite;
+}
+@keyframes animate_grow {
+	0% {
+		transform: scale3d(0.9, 0.9, 0.9);
+	}
+	50% {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+	100% {
+		transform: scale3d(0.9, 0.9, 0.9);
+	}
+}
+.ani_sid-l .b-image .marker {
+  right: auto;
+  left: 0.3125rem;
+}
+.ani_sid-l .b-image::after {
+  position: absolute;
+  display: block;
+  content: "dorama.land";
+  top: 0rem;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  background: #460a32;
+  color: #E6E6FA;
+  padding: 0.74rem;
+  box-shadow: 0 2px 4px 1px #0000004d;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  -webkit-transition: opacity 0.35s ease;
+}
+.ani_sid-l .b-image:hover::after {
+  opacity: 1;
+}
+@media screen and (max-width: 767px) {
+  .ani_sid-l {
+    display: flex;
+    float: none;
+    border-bottom: 3px solid #460a32;
+    border-right: none;
+    padding: 0.8rem 1rem 1.5rem 1rem;
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 0.9375rem;
+  }
+}
